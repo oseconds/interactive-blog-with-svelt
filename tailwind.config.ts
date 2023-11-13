@@ -1,10 +1,10 @@
-import { join } from 'path'
-import type { Config } from 'tailwindcss'
+import { join } from 'path';
+import type { Config } from 'tailwindcss';
 import forms from '@tailwindcss/forms';
 import typography from '@tailwindcss/typography';
-import { skeleton } from '@skeletonlabs/tw-plugin'
-import { OsTheme } from './0s-LiveTD-theme',
-import { LightSwitch } from '@skeletonlabs/skeleton';
+import { OsTheme } from './0s-LiveTD-theme';
+import { skeleton } from '@skeletonlabs/tw-plugin';
+
 
 
 
@@ -25,4 +25,4 @@ export default {
 			},
 		}),
 	],
-} satisfies Config;
+} as Config;

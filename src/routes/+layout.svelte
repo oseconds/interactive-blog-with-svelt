@@ -1,11 +1,35 @@
+<!--
+This file defines the layout of the application using the Skeleton UI library. It imports the app.postcss file and the necessary components from the Skeleton UI library. It also imports the floating UI for popups and sets the storePopup object with the necessary properties. The layout includes an app shell with a sidebar on the left and a header with a title and links to Discord, Twitter, and GitHub. The sidebar includes links to the home page and the about page. The content of the page route is inserted using a slot.
+-->
+
 <script lang="ts">
 	import '../app.postcss';
-	import { AppShell, AppBar } from '@skeletonlabs/skeleton';
+	import { onMount } from 'svelte';
+
+	import {
+		AppShell,
+		AppBar,
+		LightSwitch,
+		modeOsPrefers,
+		modeUserPrefers,
+		modeCurrent
+	} from '@skeletonlabs/skeleton';
 
 	// Floating UI for Popups
 	import { computePosition, autoUpdate, flip, shift, offset, arrow } from '@floating-ui/dom';
 	import { storePopup } from '@skeletonlabs/skeleton';
 	storePopup.set({ computePosition, autoUpdate, flip, shift, offset, arrow });
+
+	let isDarkMode = false;
+
+	onMount(() => {
+		isDarkMode = $modeCurrent;
+	});
+
+	function toggleTheme() {
+		isDarkMode = !isDarkMode;
+		modeUserPrefers.set(isDarkMode);
+	}
 </script>
 
 <!-- App Shell -->
@@ -17,6 +41,7 @@
 				<strong class="text-xl uppercase">Skeleton</strong>
 			</svelte:fragment>
 			<svelte:fragment slot="trail">
+				<LightSwitch on:click={toggleTheme} {isDarkMode} />
 				<a
 					class="btn btn-sm variant-ghost-surface"
 					href="https://discord.gg/EXqV7W8MtY"
@@ -56,4 +81,6 @@
 	</svelte:fragment>
 	<!-- Page Route Content -->
 	<slot />
+	
+	
 </AppShell>
