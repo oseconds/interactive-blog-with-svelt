@@ -74,7 +74,7 @@ This file defines the layout of the application using the Skeleton UI library. I
 		<nav class="list-nav">
 			<ul>
 				<li><a href="/">Home</a></li>
-				<li><a href="/about">About</a></li>
+				<!-- <li><a href="/about">About</a></li> -->
 			</ul>
 		</nav>
 		<!-- --- -->
