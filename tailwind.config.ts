@@ -3,7 +3,10 @@ import type { Config } from 'tailwindcss'
 import forms from '@tailwindcss/forms';
 import typography from '@tailwindcss/typography';
 import { skeleton } from '@skeletonlabs/tw-plugin'
-import { OsTheme } from './0s-LiveTD-theme'
+import { OsTheme } from './0s-LiveTD-theme',
+import { LightSwitch } from '@skeletonlabs/skeleton';
+
+
 
 export default {
 	darkMode: 'class',
