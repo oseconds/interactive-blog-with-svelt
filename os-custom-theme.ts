@@ -1,7 +1,7 @@
 
 import type { CustomThemeConfig } from '@skeletonlabs/tw-plugin';
 
-export const OsTheme: CustomThemeConfig = {
+export const myCustomTheme: CustomThemeConfig = {
     name: 'my-custom-theme',
     properties: {
 		// =~= Theme Properties =~=
