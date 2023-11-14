@@ -1,9 +1,24 @@
-<h1>
-    Posts
-</h1>
-<u1>
-    <li><a href="posts/1"> post1</a></li>
-    <li><a href="posts/2"> post2</a></li>
-    <li><a href="posts/3"> post3</a></li>
-    <li><a href="posts/4"> post4</a></li>
-</u1>
+<script lang="ts">
+	export let data;
+	console.log(data);
+</script>
+
+<section>
+	<div class="container px-6 py-10 mx-auto">
+		<h1 class="text-2xl font-semibold capitalize">My Post Lists</h1>
+		<div class="flex flex-col mt-8 space-y-10">
+			{#each data.posts as post}
+				<div class="border">
+					<div class="flex flex-col justify-between p-2">
+						<a href={post.slug} class="text-xl font-semibold hover:underline py-4">
+							{post.title}
+						</a>
+						<p class="py-2">{post.description}</p>
+
+						<span class="text-sm text-gray-500">On: {post.date}</span>
+					</div>
+				</div>
+			{/each}
+		</div>
+	</div>
+</section>
