@@ -43,25 +43,34 @@ This file defines the layout of the application using the Skeleton UI library. I
 			</svelte:fragment>
 			<svelte:fragment slot="trail">
 				<LightSwitch on:click={toggleTheme} {isDarkMode} />
+				
 				<a
 					class="btn btn-sm variant-ghost-surface"
-					href="https://discord.gg/EXqV7W8MtY"
+					href="https://www.instagram.com/secondary_production/"
 					target="_blank"
 					rel="noreferrer"
 				>
-					Discord
+					Instagram
 				</a>
 				<a
 					class="btn btn-sm variant-ghost-surface"
-					href="https://twitter.com/SkeletonUI"
+					href="https://soundcloud.com/0seconds"
 					target="_blank"
 					rel="noreferrer"
 				>
-					Twitter
+					SoundCloud
 				</a>
 				<a
 					class="btn btn-sm variant-ghost-surface"
-					href="https://github.com/skeletonlabs/skeleton"
+					href="https://www.mixcloud.com/0seconds/"
+					target="_blank"
+					rel="noreferrer"
+				>
+					MixCloud
+				</a>
+				<a
+					class="btn btn-sm variant-ghost-surface"
+					href="https://github.com/oseconds"
 					target="_blank"
 					rel="noreferrer"
 				>
