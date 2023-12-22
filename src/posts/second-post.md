@@ -1,6 +1,6 @@
 ---
-title: second post of my Blog
-description: this is my first post
+title: Second Post of my Blog
+description: 마크다운 형식으로 작성된 긴 텍스트와 코드 박스를 포함한 예시입니다.
 date: '2023-11-14'
 categories:
   - sveltekit
@@ -14,16 +14,6 @@ published: true
 안녕
 
 마크다운으로 채워줘 아무말이나
-
----
-title: 마크다운 테스트 포스트
-description: 마크다운 형식으로 작성된 긴 텍스트와 코드 박스를 포함한 예시입니다.
-date: '2023-11-15'
-categories:
-  - 마크다운
-  - 테스트
-published: true
----
 
 ## 마크다운 테스트
 
