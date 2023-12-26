@@ -1,5 +1,5 @@
 // categoryColors.ts
-export type Category = 'category1' | 'category2' | 'category3' | 'svelte' | 'default';
+export type Category = 'category1' | 'category2' | 'category3' | 'svelte' | 'default' | 'DJ';
 
 export const categoryColors: Record<Category, string> = {
     'category1': 'bg-primary',
