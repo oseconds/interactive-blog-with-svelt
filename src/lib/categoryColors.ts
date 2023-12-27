@@ -7,5 +7,5 @@ export const categoryColors: Record<Category, string> = {
     'category3': 'bg-tertiary',
     'svelte': 'bg-success',
     'default': 'bg-primary',
-    // Add more categories as needed
+    'DJ': 'bg-primary',
 };
